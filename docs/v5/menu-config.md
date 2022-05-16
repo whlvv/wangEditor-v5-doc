@@ -24,7 +24,7 @@ import { IEditorConfig, createEditor, createToolbar } from '@wangeditor/editor'
 const editorConfig: Partial<IEditorConfig> = { MENU_CONF: {} } // 初始化 MENU_CONF 属性
 
 // 修改 uploadImage 菜单配置
-editorConfig.MENU_CONF['uploadImage'] = {
+editorConfig.MENU_CONF!['uploadImage'] = {
     server: '/api/upload-image',
     fieldName: 'custom-field-name'
     // 继续写其他配置...
